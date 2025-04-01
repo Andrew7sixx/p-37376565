@@ -1,3 +1,4 @@
+
 import React from "react";
 import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
@@ -34,12 +35,14 @@ const Index: React.FC = () => {
   ];
 
   return (
-    <div className="w-full bg-white">
-      <Header />
-      <Hero />
-      <DownloadCTA />
+    <div className="w-full">
+      <div className="bg-gradient-to-b from-[#454545] to-white">
+        <Header />
+        <Hero />
+        <DownloadCTA />
+      </div>
 
-      <section className="px-16 py-0 max-md:px-5 max-md:py-0">
+      <section className="px-16 py-0 max-md:px-5 max-md:py-0 bg-white">
         <SectionHeader title="AI批量自动标注，您数据标注的全新选择" />
 
         <FeatureSection
