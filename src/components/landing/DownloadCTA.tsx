@@ -1,28 +1,36 @@
+
 import React from "react";
+import { Download } from "lucide-react";
+import { useToast } from "@/components/ui/use-toast";
 
 const DownloadCTA: React.FC = () => {
+  const { toast } = useToast();
+
+  const handleDownload = () => {
+    // 创建一个模拟的下载链接
+    const link = document.createElement("a");
+    // 这里可以替换为实际的软件下载地址
+    link.href = "https://example.com/naplabel-software.exe";
+    link.download = "NapLabel-Setup.exe";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // 显示成功提示
+    toast({
+      title: "下载已开始",
+      description: "软件将很快开始下载，请检查您的下载文件夹",
+    });
+  };
+
   return (
     <section className="flex flex-col items-center px-0 py-[72px] max-md:px-5 max-md:py-10">
       <button
         className="flex items-center gap-5 shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-[#454545] p-[43px] rounded-lg max-sm:p-5 hover:bg-[#3a3a3a] transition-colors"
         aria-label="Download software"
+        onClick={handleDownload}
       >
-        <svg
-          width="48"
-          height="48"
-          viewBox="0 0 48 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-[48px] h-[48px]"
-        >
-          <path
-            d="M42 30V38C42 39.0609 41.5786 40.0783 40.8284 40.8284C40.0783 41.5786 39.0609 42 38 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V30M14 20L24 30M24 30L34 20M24 30V6"
-            stroke="#F5F5F5"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <Download size={48} color="#F5F5F5" strokeWidth={4} />
         <span className="text-white text-[40px] font-bold max-sm:text-[28px]">
           官网下载
         </span>
