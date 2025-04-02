@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const Header: React.FC = () => {
@@ -38,24 +39,7 @@ const Header: React.FC = () => {
         <h1 className="text-white text-[40px] font-bold">NapTech</h1>
       </div>
       <div className="flex items-center gap-2.5 max-sm:mt-5">
-        <div>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-[50px] h-[50px]"
-          >
-            <path
-              d="M43.75 23.9584C43.7572 26.7081 43.1147 29.4207 41.875 31.8751C40.4051 34.8162 38.1453 37.29 35.3489 39.0194C32.5524 40.7488 29.3297 41.6655 26.0417 41.6667C23.2919 41.6739 20.5794 41.0315 18.125 39.7917L6.25 43.7501L10.2083 31.8751C8.96861 29.4207 8.32616 26.7081 8.33333 23.9584C8.33461 20.6704 9.25127 17.4477 10.9807 14.6512C12.7101 11.8547 15.1839 9.59499 18.125 8.12506C20.5794 6.88533 23.2919 6.24289 26.0417 6.25006H27.0833C31.4257 6.48963 35.5272 8.32248 38.6024 11.3977C41.6776 14.4729 43.5104 18.5743 43.75 22.9167V23.9584Z"
-              stroke="#9EE5FF"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </div>
+        <div className="text-[#9EE5FF] text-2xl font-bold">一</div>
         <span className="text-[#9EE5FF] text-2xl font-bold">联系我们</span>
       </div>
     </header>
