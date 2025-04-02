@@ -1,3 +1,4 @@
+
 import React from "react";
 import SectionHeader from "./SectionHeader";
 
@@ -6,7 +7,7 @@ const UseCasesSection: React.FC = () => {
     <section className="mb-[76px] px-16 py-0 max-md:px-5 max-md:py-0">
       <SectionHeader title="覆盖广泛场景 ，满足各种标注需求" />
       <div className="flex flex-col items-center">
-        <div className="relative w-full h-[685px] max-sm:h-auto max-sm:flex max-sm:flex-col max-sm:gap-5">
+        <div className="relative w-full max-w-[1200px] h-[685px] mx-auto max-sm:h-auto max-sm:flex max-sm:flex-col max-sm:gap-5">
           <img
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/282cee3ac7526971d0ae1644c10c2bdaa8ed4928"
             alt="Use case example 1"
@@ -28,7 +29,7 @@ const UseCasesSection: React.FC = () => {
             className="absolute w-[466px] h-[252px] left-0 top-[433px] max-sm:static max-sm:w-full max-sm:h-auto"
           />
         </div>
-        <div className="text-black text-2xl font-bold text-center mt-10">
+        <div className="text-black text-2xl font-bold text-center mt-10 max-w-[900px] mx-auto">
           "为数据标注团队、学术研究者及追求高效标注工具的个人用户量身打造，提供满足专业需求的智能化解决方案。"
         </div>
       </div>
