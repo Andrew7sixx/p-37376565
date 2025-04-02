@@ -29,7 +29,7 @@ const UseCasesSection: React.FC = () => {
             className="absolute w-[466px] h-[252px] left-0 top-[433px] max-sm:static max-sm:w-full max-sm:h-auto"
           />
         </div>
-        <div className="text-black text-2xl font-bold text-center mt-10 max-w-[900px] mx-auto">
+        <div className="text-black text-2xl font-bold text-center mt-[100px] max-w-[900px] mx-auto">
           "为数据标注团队、学术研究者及追求高效标注工具的个人用户量身打造，提供满足专业需求的智能化解决方案。"
         </div>
       </div>

@@ -3,13 +3,8 @@ import React from "react";
 
 const ContactSection: React.FC = () => {
   return (
-    <section className="relative h-[557px] px-16 py-0 max-md:px-5 max-md:py-0 max-sm:h-auto max-sm:pb-10 flex flex-col items-center">
-      <div className="text-black text-2xl font-bold text-center w-full max-w-[653px] mx-auto mb-10 max-sm:mb-5 max-sm:mt-10">
-        <span>"更多需求请联系我们，获取个性化定制服务，</span>
-        <br />
-        <span>帮助您实现目标。"</span>
-      </div>
-      <div className="relative w-full max-w-[1200px] mx-auto">
+    <section className="relative h-[650px] px-16 py-0 max-md:px-5 max-md:py-0 max-sm:h-auto max-sm:pb-10 flex flex-col items-center">
+      <div className="relative w-full max-w-[1200px] mx-auto h-[500px] max-sm:h-auto">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/48bb01affa3f51a7e8938c6e5f5394a52e97d0a0"
           alt="Contact illustration 1"
@@ -20,6 +15,11 @@ const ContactSection: React.FC = () => {
           alt="Contact illustration 2"
           className="absolute w-[543px] h-[356px] right-0 bottom-0 max-sm:static max-sm:w-full max-sm:h-auto max-sm:mt-5"
         />
+      </div>
+      <div className="text-black text-2xl font-bold text-center w-full max-w-[653px] mx-auto mt-[30px] mb-10 max-sm:mb-5 max-sm:mt-10">
+        <span>"更多需求请联系我们，获取个性化定制服务，</span>
+        <br />
+        <span>帮助您实现目标。"</span>
       </div>
     </section>
   );
